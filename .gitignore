@@ -1,0 +1,24 @@
+# BART data: keep in S3, never in this repo
+*.xlsx
+*.xls
+*.csv
+tables/
+data/
+
+# Credentials
+.env
+.env.*
+.pgpass
+*.pem
+.aws/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
