@@ -8,6 +8,7 @@ data/
 # Credentials
 .env
 .env.*
+!.env.example
 .pgpass
 *.pem
 .aws/
@@ -22,3 +23,7 @@ venv/
 .DS_Store
 .vscode/
 .idea/
+
+# React app
+node_modules/
+client/dist/
