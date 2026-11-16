@@ -19,7 +19,7 @@ S3 (raw xlsx) -> build_tables.py -> CSV tables -> load.sh -> PostgreSQL (RDS)
 | `server/route_engine.py` | Plans routes from the database: the highest-scoring route for a team when it clocks in, a re-plan after a missed train, and scoring of existing shifts. Usable as a CLI and as a library. |
 | `server/api.py` | FastAPI web API around the route engine. In production it also serves the built React app. |
 | `client/` | React app (Vite): Team view, Day board, Existing shifts. |
-| `bart-shift-demo.html` | The original standalone prototype with placeholder data. Superseded by `client/`; kept for reference. |
+| `old-demo.html` | The original standalone prototype with placeholder data. Superseded by `client/`; kept for reference. |
 
 ### The app
 
