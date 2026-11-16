@@ -1,8 +1,8 @@
 import { hours } from '../time';
 import LinePill from './LinePill';
 
-export function Stat({ value, label }) {
-  return <div className="stat"><b>{value}</b><span>{label}</span></div>;
+export function Stat({ value, label, hint }) {
+  return <div className="stat"><b>{value}</b><span className={hint ? 'hint' : undefined} title={hint}>{label}</span></div>;
 }
 
 // Summary tiles for one route (engine route or scored existing shift).

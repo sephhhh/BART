@@ -19,9 +19,9 @@ export default function RouteTable({ route, onHover = () => {}, action, doneBefo
               <tr key={i} className={cls} onMouseEnter={() => onHover(i)}>
                 <td>{no}</td>
                 {l.kind === 'ride' ? <>
-                  <td>{l.fromName}</td><td>{l.toName}</td>
+                  <td className="wrap">{l.fromName}</td><td className="wrap">{l.toName}</td>
                   <td>{fmt(l.depart)}</td><td>{fmt(l.arrive)}</td>
-                  <td><LinePill leg={l} /></td><td>{l.direction}</td><td className="num">{l.points?.toFixed(1)}</td>
+                  <td><LinePill leg={l} /></td><td className="wrap">{l.direction}</td><td className="num">{l.points?.toFixed(1)}</td>
                 </> : l.kind === 'break' ? <>
                   <td colSpan="2">{l.arrive - l.depart}-minute break at {l.fromName}</td>
                   <td>{fmt(l.depart)}</td><td>{fmt(l.arrive)}</td><td colSpan="3" />
